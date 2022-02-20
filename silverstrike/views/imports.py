@@ -163,7 +163,7 @@ class ImportProcessView(LoginRequiredMixin, generic.TemplateView):
                 account=account,
                 opposing_account_id=file.account_id
                 )
-        return HttpResponseRedirect('/')
+        return HttpResponseRedirect(reverse('index'))
 
 
 class ImportFireflyView(LoginRequiredMixin, generic.edit.CreateView):
