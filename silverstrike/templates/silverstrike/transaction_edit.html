@@ -14,7 +14,7 @@
   </small>
 </h1>
 <ol class="breadcrumb">
-  <li><a href="/">Home</a></li>
+  <li><a href="{% url 'index' %}">Home</a></li>
   <li><a href="{% url 'transactions' %}">{% trans 'Transactions' %}</a></li>
   {% if object %}
   <li><a href="{{ object.get_absolute_url }}">{{ object }}</a></li>

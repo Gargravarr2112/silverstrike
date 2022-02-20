@@ -7,7 +7,7 @@
 {% block content_header %}
 <h1>Categories</h1>
 <ol class="breadcrumb">
-  <li><a href="/">{% trans 'Home' %}</a></li>
+  <li><a href="{% url 'index' %}">{% trans 'Home' %}</a></li>
   <li class="active">{% trans 'Categories' %}</li>
 </ol>
 {% endblock %}
