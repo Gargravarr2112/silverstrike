@@ -1,8 +1,9 @@
-from . import dkb, dkb_visa, pc_mastercard, volksbank
+from . import dkb, dkb_visa, halifax, pc_mastercard, volksbank
 
 IMPORTERS = [
     dkb,
     dkb_visa,
+    halifax,
     pc_mastercard,
     volksbank,
 ]
@@ -10,6 +11,7 @@ IMPORTERS = [
 IMPORTER_NAMES = [
     'DKB Giro',
     'DKB Visa',
+    'Halifax',
     'PC MasterCard',
     'Volksbank',
 ]
