@@ -5,7 +5,7 @@
 {% block content_header %}
 <h1>{% blocktrans with object_name=object.title %}Delete '{{ object_name }}' transaction{% endblocktrans %}</h1>
 <ol class="breadcrumb">
-  <li><a href="/">{% trans 'Home' %}</a></li>
+  <li><a href="{% url 'index' %}">{% trans 'Home' %}</a></li>
   <li><a href="{% url 'transactions' %}">{% trans 'Transactions' %}</a></li>
   <li><a href="{{ object.get_absolute_url }}">{{ object }}</a></li>
   <li class="active">{% trans 'Edit' %}</li>

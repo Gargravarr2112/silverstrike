@@ -7,7 +7,7 @@
   <small>{{ month|date:'F Y'}}</small>
 </h1>
 <ol class="breadcrumb">
-  <li><a href="/">{% trans 'Home' %}</a></li>
+  <li><a href="{% url 'index' %}">{% trans 'Home' %}</a></li>
   <li><a href="{% url 'categories' %}">{% trans 'Categories' %}</a></li>
   <li class="active">{{ category.name|title }}</li>
 </ol>
